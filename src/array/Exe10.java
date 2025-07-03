@@ -14,12 +14,24 @@ public class Exe10 {
 
 		double[] numeros = new double[10];
 
-		int contPositovo = 0;
-		int contImpar = 0;
+		int somaPositovo = 0;
+		int quantidadeNegativos = 0;
 
 		for (int i = 0; i < 10; i++) {
 
+			numeros[i] = sc.nextDouble();
+			if (numeros[i] < 0) {
+
+				quantidadeNegativos++;
+
+			} else {
+
+				somaPositovo += numeros[i];
+			}
 		}
+
+		System.out.printf("A quantidade de números negativos %d%n", quantidadeNegativos);
+		System.out.printf("Soma dos números positivos: %d%n", somaPositovo);
 
 		sc.close();
 	}
