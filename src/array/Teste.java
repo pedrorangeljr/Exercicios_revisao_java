@@ -1,13 +1,14 @@
 package array;
 
+import java.util.Arrays;
+
 public class Teste {
 
 	public static void main(String[] args) {
-		
-	
-		int[] array = new int[10];
-		
-		
+
+		int[] intArray = { 2, 5, 46, 12, 34 };
+
+		System.out.println(Arrays.toString(intArray));
 	}
 
 }
